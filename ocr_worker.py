@@ -3,16 +3,10 @@ import os
 import sys
 import traceback
 
-# Keep a private copy of the real stdout for our answers, then point
-# stdout at stderr so library messages (even C-level ones) can never
-# get mixed into the answers.
 proto = os.fdopen(os.dup(1), "w", encoding="utf-8")
 os.dup2(2, 1)
 sys.stdout = sys.stderr
 
-
-# On Windows 11, a process running in the background can be put in
-# "efficiency mode", which can make the OCR about 3x slower.
 # Ask Windows not to throttle this process.
 if os.name == "nt":
 
