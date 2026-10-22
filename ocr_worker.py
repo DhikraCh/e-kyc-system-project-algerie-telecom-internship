@@ -1,11 +1,3 @@
-"""
-Long-running OCR process.
-
-It loads the PaddleOCR models once, then waits for image paths on
-stdin and answers each one with a single JSON line on stdout.
-Everything else the libraries print goes to stderr (ocr_worker.log).
-"""
-
 import json
 import os
 import sys
