@@ -1,0 +1,8 @@
+# Main environment (Streamlit app, face verification, liveness)
+streamlit
+opencv-python
+numpy
+matplotlib
+mediapipe
+deepface
+tf-keras
