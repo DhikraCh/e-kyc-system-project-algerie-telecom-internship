@@ -1,8 +1,8 @@
-# Main environment (Streamlit app, face verification, liveness)
-streamlit
-opencv-python
-numpy
-matplotlib
-mediapipe
-deepface
-tf-keras
+# Main environment (Python 3.13): Streamlit UI, liveness, face verification
+streamlit==1.65.0
+opencv-python==5.0.0.93
+numpy==2.3.2
+matplotlib==3.10.8
+mediapipe==1.0.1
+deepface==0.0.101
+tf-keras==2.20.1
